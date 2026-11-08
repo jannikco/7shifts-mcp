@@ -1,39 +1,60 @@
 {
   "schemaVersion": 1,
-  "status": "ready",
-  "verification": "mock-only",
-  "releaseEligible": true,
-  "maintainer": "jannikco",
-  "license": "MIT",
-  "sourceRevision": "3c055c1d3f26e73357bbe8eee77d91c2e0d81ea06ac8c145491527e4470b6404",
-  "evidence": [
-    "Source-backed provider setup metadata",
-    "Offline configuration and MCP protocol tests"
-  ],
-  "provenance": [
-    "https://developers.7shifts.com/reference/"
-  ],
   "id": "7shifts-mcp",
   "kind": "mcp-setup",
   "product": "pipmcp",
   "title": "7shifts MCP setup and connection checker",
-  "description": "Generate 7shifts MCP client configuration, inspect available tools and validate hosted endpoint access through PipMCP.",
+  "description": "Prepare 7shifts for AI workflows with a PipMCP setup doctor, authenticated discovery and coding-agent instructions.",
+  "status": "ready",
+  "verification": "mock-only",
+  "releaseEligible": false,
   "operationIds": [],
+  "maintainer": "jannikco",
+  "license": "MIT",
+  "attributionSlug": "github-7shifts-mcp",
+  "sourceRevision": "6c84319ceb3df78c62d02c92339efc02225f90fa2226fc8af113e396026c27e3",
+  "qualityVersion": 2,
+  "artifactType": "setup",
+  "evidence": [
+    "Gateway HTTP transport fixtures",
+    "Generated stdio wrapper discovery/call fixtures"
+  ],
+  "provenance": [
+    "https://developers.7shifts.com/reference/"
+  ],
+  "utility": {
+    "problem": "Prepare 7shifts and inspect your hosted setup",
+    "output": "Offline setup plan and authenticated discovery diagnostics"
+  },
   "appSlug": "7shifts",
   "appName": "7shifts",
-  "providerDocs": "https://developers.7shifts.com/reference/",
-  "providerWebsite": "https://www.7shifts.com/",
-  "authentication": {
-    "type": "bearer",
-    "requiredCredentialFields": [
-      "token"
-    ],
-    "requiredHeaderNames": [],
-    "helpUrl": "https://developers.7shifts.com/reference/authentication",
-    "tenantRequired": false,
-    "accountParameterNames": [
-      "company_id"
-    ]
-  },
-  "attributionSlug": "github-7shifts-mcp"
+  "maintenanceOnly": true,
+  "executionAuthority": "pipmcp-gateway",
+  "version": "1.0.0",
+  "agentReady": true,
+  "capabilityEvidence": {
+    "local": {
+      "level": "Tested",
+      "operations": [
+        {
+          "name": "gateway_transport",
+          "level": "Tested",
+          "method": "contract-fixture",
+          "evidenceRefs": [
+            "Generated gateway/stdio fixtures"
+          ]
+        }
+      ],
+      "evidenceRefs": [
+        "Generated gateway/stdio fixtures"
+      ],
+      "mode": "local"
+    },
+    "managed": {
+      "level": "Documented",
+      "operations": [],
+      "evidenceRefs": [],
+      "mode": "managed"
+    }
+  }
 }

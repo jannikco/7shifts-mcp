@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "version": "1.0.0",
+  "product": "pipmcp",
+  "credential": "PIPMCP_API_KEY",
+  "skills": [
+    {
+      "name": "pipmcp-7shifts",
+      "description": "Connect AI agents to 7shifts using one PipMCP API key and actual hosted tool discovery."
+    }
+  ],
+  "files": {
+    "skills/pipmcp-7shifts/SKILL.md": "161e2347b50f96534c837756532651ed8f37a4a1a1af689db647e25952e6c757"
+  }
+}
